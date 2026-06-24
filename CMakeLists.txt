@@ -629,7 +629,7 @@ include(\"\${CMAKE_CURRENT_LIST_DIR}/iconvTargets.cmake\")
 check_required_components(iconv)
 
 if(NOT TARGET Iconv::Iconv)
-    add_library(Iconv::Iconv ALIAS iconv)
+    add_library(Iconv::Iconv ALIAS Iconv::iconv)
 endif()
 ")
 
