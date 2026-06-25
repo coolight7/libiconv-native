@@ -566,7 +566,7 @@ target_compile_definitions(iconv PRIVATE
     $<$<BOOL:${ICONV_ENABLE_EXTRA}>:ENABLE_EXTRA=1>
 )
 
-target_link_libraries(iconv PRIVATE charset)
+target_link_libraries(iconv PUBLIC charset)
 
 set_target_properties(iconv PROPERTIES
     VERSION ${PROJECT_VERSION}
